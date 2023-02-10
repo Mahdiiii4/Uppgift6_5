@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace uppgift6_5
 {
@@ -6,8 +6,11 @@ namespace uppgift6_5
     {
         static void Main(string[] args)
         {
-            Längst("test12", "test12");
-            Längst("122", "121");
+
+            Console.WriteLine("Skriv ner text var på en rad");
+            string ett = Console.ReadLine();
+            string två = Console.ReadLine();
+            Längst(ett, två);
         }
         static void Längst(string ett, string två)
         {
@@ -21,7 +24,7 @@ namespace uppgift6_5
                 Console.WriteLine("Andra är längst");
                 return;
             }
-            else if (ett.Length == två.Length) 
+            else if (ett.Length == två.Length)
             {
                 Console.WriteLine(ett);
                 return;
